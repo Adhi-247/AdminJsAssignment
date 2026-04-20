@@ -1,0 +1,66 @@
+:root {
+  --color-dark-blue: #0b1f3a;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-off-white: #f8f7f2;
+  --color-border: #d9dfe8;
+  --color-text-main: #101010;
+  --color-text-muted: #3e4b5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-off-white);
+  color: var(--color-text-main);
+}
+
+.navbar {
+  background: var(--color-dark-blue);
+  color: var(--color-off-white);
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid #132c51;
+}
+
+.navbar a {
+  color: var(--color-off-white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1.5rem auto;
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.button-primary {
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+  border: 1px solid var(--color-dark-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  filter: brightness(1.1);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
